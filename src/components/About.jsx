@@ -2,6 +2,8 @@ import aboutStats from "../data/aboutStats";
 import { motion } from "framer-motion";
 import profile from "../assets/profile.jpg";
 import portfolio from "../data/portfolio";
+import CountUp from "react-countup";
+import { FaFolderOpen } from "react-icons/fa";
 
 function About() {
   return (
@@ -93,32 +95,40 @@ function About() {
         </div>
 
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {aboutStats.map((stat, index) => {
+            const Icon = stat.icon || FaFolderOpen;
 
-          {aboutStats.map((stat, index) => (
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.2,
+                }}
+                className="group rounded-2xl border border-slate-800 bg-slate-900/60 p-8 text-center backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:border-cyan-400 hover:shadow-[0_25px_60px_rgba(6,182,212,0.30)]"
+              >
+                <div className="mb-5 flex justify-center">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-500/10 text-3xl text-cyan-400 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                    <Icon />
+                  </div>
+                </div>
 
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.2,
-            }}
-            className="rounded-2xl border border-slate-800 bg-slate-900/60 p-8 text-center backdrop-blur-lg transition-all duration-300 hover:-translate-y-3 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20"
-        >
+                <h3 className="text-5xl font-bold text-cyan-400">
+                  <CountUp
+                    end={stat.number}
+                  />
+                  {stat.suffix}
+                </h3>
 
-          <h3 className="text-5xl font-bold text-cyan-400">
-           {stat.number}
-         </h3>
-
-          <p className="mt-4 text-lg font-semibold text-white">
-           {stat.title}
-          </p>
-
-    </motion.div>
-
-  ))}
+                <p className="mt-4 text-lg font-semibold text-white">
+                  {stat.title}
+                </p>
+              </motion.div>
+            );
+          })}
 
         </div>
       </div>
