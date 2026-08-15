@@ -171,7 +171,7 @@ function Hero() {
         {/* RIGHT */}
 
         <motion.div
-          className="relative hidden w-1/2 items-center justify-center lg:flex"
+          className="relative flex w-full items-center justify-center lg:w-1/2"
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
