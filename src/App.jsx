@@ -29,6 +29,7 @@
 
 // export default App;
 
+import { useState } from "react";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -41,9 +42,16 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
-    <>
-      <Navbar />
+    <div className={darkMode ? "dark" : "light"}>
+
+      <Navbar
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+      />
+
       <Hero />
       <About />
       <Skills />
@@ -52,7 +60,8 @@ function App() {
       <Certificates />
       <Contact />
       <Footer />
-    </>
+
+    </div>
   );
 }
 

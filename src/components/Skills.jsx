@@ -5,7 +5,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="bg-slate-950 py-28 text-white"
+      className="bg-white dark:bg-slate-950 py-28 text-slate-900 dark:text-white"
     >
       <div className="mx-auto max-w-7xl px-6">
 
@@ -43,7 +43,7 @@ function Skills() {
                   duration: 0.5,
                   delay: index * 0.08,
                 }}
-                className="group rounded-2xl border border-slate-800 bg-slate-900/60 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-cyan-400 hover:shadow-[0_25px_60px_rgba(6,182,212,0.25)]"
+                className="group rounded-2xl bg-slate-100 dark:bg-slate-900 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-cyan-400 hover:shadow-[0_25px_60px_rgba(6,182,212,0.25)]"
               >
 
                 <div className="flex items-center gap-4">
@@ -60,7 +60,7 @@ function Skills() {
                       {skill.name}
                     </h3>
 
-                    <p className="text-sm text-slate-400">
+                    <p className="text-sm text-slate-400 dark:text-slate-500">
                       {skill.level}%
                     </p>
 

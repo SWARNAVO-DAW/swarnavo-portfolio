@@ -5,7 +5,7 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="bg-slate-950 py-28 text-white"
+      className="bg-white dark:bg-slate-950 py-28 text-slate-900 dark:text-white"
     >
       <div className="mx-auto max-w-7xl px-6">
 
@@ -59,7 +59,7 @@ function Experience() {
 
               {/* Experience Card */}
 
-              <div className="group rounded-2xl border border-slate-800 bg-slate-900/60 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_25px_60px_rgba(6,182,212,0.20)]">
+              <div className="group rounded-2xl border border-slate-800 bg-slate-100 dark:bg-slate-900/60 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_25px_60px_rgba(6,182,212,0.20)]">
 
                 <div className="flex flex-col justify-between gap-4 md:flex-row md:items-start">
 

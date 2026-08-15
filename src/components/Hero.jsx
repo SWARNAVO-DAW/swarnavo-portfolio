@@ -7,7 +7,9 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from "react-icons/fa";
 
 function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white">
+    <section
+    id="home"
+    className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white">
 
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
@@ -110,24 +112,26 @@ function Hero() {
 
   <div className="flex flex-wrap gap-5">
 
-    <a
-      href={portfolio.resume}
-      download
-      className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 px-8 py-4 font-semibold text-white shadow-lg shadow-cyan-500/30 transition-all duration-500 hover:-translate-y-1 hover:scale-105 hover:shadow-cyan-400/60"
-    >
-      <span className="relative z-10">
-        📄 Download Resume
-      </span> 
-    </a>
+    {/* Explore Projects */}
+  <a
+    href="#projects"
+    className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 px-8 py-4 font-semibold text-white shadow-lg shadow-cyan-500/30 transition-all duration-500 hover:-translate-y-1 hover:scale-105 hover:shadow-cyan-400/60"
+  >
+    <span className="relative z-10">
+      🚀 Explore My Projects
+    </span>
 
-    <a
-      href={portfolio.github}
-      target="_blank"
-      rel="noreferrer"
-      className="rounded-xl border border-cyan-400 bg-white/5 px-8 py-4 font-semibold backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-cyan-300 hover:bg-cyan-500 hover:text-black"
-    >
-      💻 View GitHub
-    </a>
+    <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full"></span>
+  </a>
+
+
+  {/* Let's Connect */}
+  <a
+    href="#contact"
+    className="rounded-xl border border-cyan-400 bg-white/5 px-8 py-4 font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-cyan-400 hover:text-slate-950"
+  >
+    📬 Let's Connect
+  </a>
 
   </div>
 
