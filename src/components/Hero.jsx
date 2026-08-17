@@ -9,8 +9,8 @@ function Hero() {
   return (
     <section
     id="home"
-    className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white">
-
+    className="relative min-h-[auto] overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-black pb-12 pt-24 text-white md:min-h-screen md:pb-20 md:pt-28"
+>
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
       <div className="absolute left-20 top-32 h-3 w-3 animate-ping rounded-full bg-cyan-400"></div>
@@ -45,7 +45,6 @@ function Hero() {
       repeat: Infinity,
     }}
   />
-
 </div>
 
       {/* Container */}
@@ -222,23 +221,25 @@ function Hero() {
 
       </div>
 
-<div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+{/* ================= SCROLL INDICATOR ================= */}
 
-  <a
-    href="#about"
-    className="flex flex-col items-center text-slate-400 transition hover:text-cyan-400"
+<div className="mt-8 flex flex-col items-center gap-2 text-slate-400">
+
+  <span className="text-sm tracking-widest">
+    Scroll
+  </span>
+
+  <motion.div
+    animate={{ y: [0, 8, 0] }}
+    transition={{
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    }}
   >
-
-    <span className="mb-2 text-sm tracking-widest">
-      Scroll
-    </span>
-
     <FaArrowDown size={18} />
-
-  </a>
-
+  </motion.div>
 </div>
-
     </section>
   );
 }

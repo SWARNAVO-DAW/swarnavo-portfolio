@@ -5,7 +5,7 @@ function Certificates() {
   return (
     <section
       id="certificates"
-      className="bg-white dark:bg-slate-950 py-28 text-slate-900 dark:text-white"
+      className="bg-white dark:bg-slate-950 py-16 md:py-24 text-slate-900 dark:text-white"
     >
       <div className="mx-auto max-w-7xl px-6">
 
@@ -31,7 +31,7 @@ function Certificates() {
 
         {/* ================= CERTIFICATE GRID ================= */}
 
-        <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
           {certificates.map((certificate, index) => (
 

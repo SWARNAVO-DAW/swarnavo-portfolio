@@ -5,7 +5,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="bg-white dark:bg-slate-950 py-28 text-slate-900 dark:text-white"
+      className="bg-white dark:bg-slate-950 py-16 md:py-24 text-slate-900 dark:text-white"
     >
       <div className="mx-auto max-w-7xl px-6">
 

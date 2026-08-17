@@ -38,7 +38,9 @@ function Contact() {
           {/* ================= EMAIL ================= */}
 
           <motion.a
-            href="mailto:swarnavodaw8@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=swarnavodaw8@gmail.com"
+            target="_blank"
+            rel="noreferrer"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
