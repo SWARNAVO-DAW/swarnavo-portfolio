@@ -49,7 +49,7 @@ function Hero() {
 
       {/* Container */}
 
-      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-100px)] max-w-[1400px] flex-col-reverse items-center justify-center gap-10 px-6 pt-12 lg:flex-row lg:justify-between lg:gap-16 lg:pt-16">
+      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-140px)] max-w-[1400px] flex-col-reverse items-center justify-center gap-10 px-6 pt-12 lg:flex-row lg:justify-between lg:gap-16 lg:pt-16">
 
         {/* LEFT */}
 
@@ -223,7 +223,7 @@ function Hero() {
 
 {/* ================= SCROLL INDICATOR ================= */}
 
-<div className="mt-8 flex flex-col items-center gap-2 pb-6 text-slate-400">
+<div className="mt-5 flex flex-col items-center gap-2 pb-2 text-slate-400">
 
   <span className="text-sm tracking-widest">
     Scroll

@@ -7,7 +7,7 @@ function About() {
   return (
     <section
       id="about"
-      className="bg-white dark:bg-slate-950 text-slate-900 dark:text-white"
+      className="bg-white dark:bg-slate-950 text-slate-900 dark:text-white pt-8"
     >
       <div className="mx-auto max-w-7xl px-6">
 

@@ -39,15 +39,15 @@
 
 // export default Navbar;
 
-import {
-  FaDownload,
-  FaMoon,
-  FaSun,
-  FaBars,
-  FaTimes,
-} from "react-icons/fa";
-
-import { useEffect, useState } from "react";
+// import {
+//   FaDownload,
+//   FaMoon,
+//   FaSun,
+//   FaBars,
+//   FaTimes,
+// } from "react-icons/fa";
+import { FaDownload, FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
 function Navbar() {
 
