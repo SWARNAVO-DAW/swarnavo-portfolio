@@ -194,6 +194,15 @@ function Navbar() {
             <a href="#contact" onClick={() => setMenuOpen(false)} className="text-slate-900 transition-colors hover:text-cyan-400 dark:text-white">
               Contact
             </a>
+            <a
+              href="/resume.pdf"
+              download
+              onClick={() => setMenuOpen(false)}
+              className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 px-5 py-3 font-semibold text-white shadow-lg shadow-cyan-500/30 transition-all duration-300 hover:scale-105"
+            >
+              <FaDownload />
+              Download Resume
+            </a>
           </div>
         </div>
       )}
