@@ -5,7 +5,7 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="bg-white dark:bg-slate-950 py-28 text-slate-900 dark:text-white"
+      className="bg-white dark:bg-slate-950 py-20 text-slate-900 dark:text-white md:py-24"
     >
       <div className="mx-auto max-w-7xl px-6">
 

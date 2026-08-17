@@ -5,7 +5,7 @@ function Certificates() {
   return (
     <section
       id="certificates"
-      className="bg-white dark:bg-slate-950 py-16 md:py-24 text-slate-900 dark:text-white"
+      className="bg-white py-20 text-slate-900 dark:bg-slate-950 dark:text-white md:py-24"
     >
       <div className="mx-auto max-w-7xl px-6">
 
