@@ -20,7 +20,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-white py-12 md:py-16 text-slate-900 dark:bg-slate-950 dark:text-white"
+      className="bg-white py-12 md:py-12 text-slate-900 dark:bg-slate-950 dark:text-white"
     >
       <div className="mx-auto max-w-7xl px-6">
 

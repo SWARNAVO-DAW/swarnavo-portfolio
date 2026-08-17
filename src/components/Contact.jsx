@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="bg-white dark:bg-slate-950 py-20 text-slate-900 dark:text-white md:py-24"
+      className="bg-white dark:bg-slate-950 py-10 text-slate-900 dark:text-white md:py-24"
     >
       <div className="mx-auto max-w-7xl px-6">
 
