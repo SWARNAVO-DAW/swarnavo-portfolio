@@ -20,7 +20,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-white py-20 md:py-24 text-slate-900 dark:bg-slate-950 dark:text-white"
+      className="bg-white py-12 md:py-16 text-slate-900 dark:bg-slate-950 dark:text-white"
     >
       <div className="mx-auto max-w-7xl px-6">
 
@@ -46,7 +46,7 @@ function Projects() {
 
         {/* ================= PROJECT GRID ================= */}
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+        <div className="mt-8 grid gap-8 lg:grid-cols-2">
 
           {projects.map((project, index) => (
 

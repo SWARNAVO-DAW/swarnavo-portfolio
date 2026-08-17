@@ -5,7 +5,7 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="bg-white dark:bg-slate-950 py-20 text-slate-900 dark:text-white md:py-24"
+      className="bg-white dark:bg-slate-950 py-12 md:py-16 text-slate-900 dark:text-white"
     >
       <div className="mx-auto max-w-7xl px-6">
 
@@ -31,7 +31,7 @@ function Experience() {
 
         {/* Timeline */}
 
-        <div className="relative mx-auto mt-20 max-w-4xl">
+        <div className="relative mx-auto mt-10 max-w-4xl">
 
           {/* Vertical Line */}
 
@@ -49,7 +49,7 @@ function Experience() {
                 duration: 0.6,
                 delay: index * 0.15,
               }}
-              className="relative mb-12 md:pl-16"
+              className="relative mb-8 last:mb-0 md:pl-16"
             >
 
               {/* Timeline Dot */}
