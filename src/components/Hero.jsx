@@ -9,7 +9,7 @@ function Hero() {
   return (
     <section
     id="home"
-    className="relative min-h-[auto] overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-black pb-12 pt-24 text-white md:min-h-screen md:pb-20 md:pt-28"
+    className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-black pb-6 pt-4 text-white md:pb-10 md:pt-6"
 >
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
@@ -49,7 +49,7 @@ function Hero() {
 
       {/* Container */}
 
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-[1400px] flex-col-reverse items-center justify-center gap-16 px-6 pt-28 lg:flex-row lg:justify-between">
+      <div className="relative z-10 mx-auto flex max-w-[1400px] flex-col-reverse items-center justify-center gap-10 px-6 pt-6 lg:flex-row lg:justify-between lg:gap-16">
 
         {/* LEFT */}
 
@@ -223,7 +223,7 @@ function Hero() {
 
 {/* ================= SCROLL INDICATOR ================= */}
 
-<div className="mt-8 flex flex-col items-center gap-2 text-slate-400">
+<div className="mt-4 flex flex-col items-center gap-1 pb-4 text-slate-400">
 
   <span className="text-sm tracking-widest">
     Scroll
