@@ -212,7 +212,7 @@ function Hero() {
     repeat: Infinity,
     ease: "easeInOut",
   }}
-  className="relative z-10 w-[280px] md:w-[360px] lg:w-[420px] rounded-3xl border-4 border-cyan-400 shadow-[0_20px_70px_rgba(6,182,212,0.35)] transition-all duration-500 hover:scale-105 hover:shadow-[0_30px_90px_rgba(6,182,212,0.55)]"
+  className="relative z-10 mt-16 w-[280px] md:mt-0 md:w-[360px] lg:w-[420px] rounded-3xl border-4 border-cyan-400 shadow-[0_20px_70px_rgba(6,182,212,0.35)] transition-all duration-500 hover:scale-105 hover:shadow-[0_30px_90px_rgba(6,182,212,0.55)]"
 />
 
 </div>
