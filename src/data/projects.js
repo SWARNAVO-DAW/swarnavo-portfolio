@@ -1,6 +1,6 @@
 import diwaliImage from "../assets/projects/diwali-sales.png";
 import blinkitImage from "../assets/projects/blinkit-sales.png";
-import heartDiseaseImage from "../assets/projects/heart-disease.png";
+import diseasePredictionImage from "../assets/projects/disease-prediction.png";
 import weatherImage from "../assets/projects/weather-data-analysis.png";
 
 const projects = [
@@ -55,13 +55,16 @@ const projects = [
   },
 
   {
-    id: "heart-disease",
-    title: "Heart Disease Prediction",
-    category: "Machine Learning",
-    image: heartDiseaseImage,
+  id: "multi-disease-prediction",
 
-    description:
-  "Developed an end-to-end machine learning application for heart disease prediction using clinical patient data. The project includes data preprocessing, exploratory data analysis, feature scaling, Logistic Regression model training, performance evaluation, and deployment through an interactive Streamlit web application.",
+  title: "Multi-Disease Prediction System",
+
+  category: "Machine Learning",
+
+  image: diseasePredictionImage,
+
+  description:
+    "Developed an end-to-end machine learning application that integrates four disease prediction models into a single interactive Streamlit platform. The system performs data preprocessing, model training, evaluation, model serialization, and real-time prediction for Heart Disease, Thyroid Disease, Lung Cancer, and Parkinson's Disease.",
 
   technologies: [
     "Python",
@@ -69,29 +72,25 @@ const projects = [
     "NumPy",
     "Matplotlib",
     "Seaborn",
+    "Machine Learning",
     "Scikit-learn",
     "Logistic Regression",
-    "Streamlit"
+    "Random Forest",
+    "Support Vector Machine",
+    "Classification metrics",
+    "Data Processing",
+    "Jupyter Notebook",
+    "Pycharm",
+    "Streamlit",
+    "Pickle"
   ],
 
   github:
-    "https://github.com/SWARNAVO-DAW/Heart_Disease_Prediction",
+    "https://github.com/SWARNAVO-DAW/Prediction-of-Disease-Outbreaks",
 
-  live:
-    "http://localhost:8501",
-
-  highlights: [
-    "Used the UCI Heart Disease dataset containing 303 records and 13 clinical features.",
-    "Performed data preprocessing, exploratory data analysis, and feature preparation.",
-    "Implemented Logistic Regression for binary heart disease classification.",
-    "Evaluated the model using accuracy, confusion matrix, precision, recall, and F1-score.",
-    "Developed an interactive Streamlit web application for real-time prediction.",
-    "Users can enter clinical parameters and receive a heart disease prediction.",
-    "Ongoing extension: developing additional disease prediction models for Parkinson's Disease,Hypothyroidism, and Lung Cancer."
-  ],
-
-  status: "Completed + Ongoing Extensions"
-  },
+  demo:
+    "https://disease-prediction-by-swarnavo.streamlit.app"
+},
 
   {
     id: "weather",
